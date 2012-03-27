@@ -32,6 +32,11 @@ public class PrimeFactorizationTest {
 		assertEquals(list(2, 3), PrimeFactorization.generateFactors(6));
 	}
 	
+	@Test
+	public void testEight() {
+		assertEquals(list(2, 2, 2), PrimeFactorization.generateFactors(8));
+	}
+	
 	private ArrayList<Integer> list(int... ints) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i : ints) {
