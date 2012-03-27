@@ -6,9 +6,11 @@ public class PrimeFactorization {
 	public static ArrayList<Integer> generateFactors(int i) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		
-		while (i % 2 == 0) {
-			ret.add(2);
-			i /= 2;
+		for( int shamelessCopy = 2; shamelessCopy < i; shamelessCopy++){
+			while (i % shamelessCopy == 0) {
+				ret.add(shamelessCopy);
+				i /= shamelessCopy;
+			}
 		}
 		
 		if (i > 1) {
