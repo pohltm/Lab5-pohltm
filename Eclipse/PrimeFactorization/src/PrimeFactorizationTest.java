@@ -42,6 +42,11 @@ public class PrimeFactorizationTest {
 		assertEquals(list(3, 3), PrimeFactorization.generateFactors(9));
 	}
 	
+	@Test
+	public void testThreeHundredTwentyFiveThousandOneHundredFifteen(){
+		assertEquals(list(5,7,7,1327), PrimeFactorization.generateFactors(325115));
+	}
+	
 	private ArrayList<Integer> list(int... ints) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i : ints) {
