@@ -14,7 +14,7 @@ public class PrimeNumberGeneratorTest {
 	
 	@Test
 	public void testTwo(){
-		assertEquals(list(2), PrimeNumberGenerator.generatePrimes(2));
+		assertEquals(list(), PrimeNumberGenerator.generatePrimes(2));
 	}
 	
 	private ArrayList<Integer> list(int... ints) {
